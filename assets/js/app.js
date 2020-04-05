@@ -180,7 +180,6 @@ function makeResponsive() {
     // append y axis
     var yAxis = chartGroup.append("g")
       .classed("y-axis", true)
-      .attr("transform", `translate(${width}, 0)`)
       .call(leftAxis);
   
     // append initial circles
