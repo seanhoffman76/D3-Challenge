@@ -72,11 +72,11 @@ function makeResponsive() {
 
   // function used for updating yAxis var upon click on axis label
   function renderYAxes(newYScale, yAxis) {
-    var sideAxis = d3.axisLeft(newYScale);
+    var leftAxis = d3.axisLeft(newYScale);
 
     yAxis.transition()
       .duration(1000)
-      .call(sideAxis);
+      .call(leftAxis);
     return yAxis;
   }
 
@@ -150,7 +150,7 @@ function makeResponsive() {
   };
 
   // Retrieve data from the CSV file and execute everything below
-  d3.csv("/D3-Challenge/D3_data_journalism/assets/data/data.csv").then(function(behaveData, err) {
+  d3.csv("/D3-Challenge/assets/data/data.csv").then(function(behaveData, err) {
     if (err) throw err;
   
     // parse data
