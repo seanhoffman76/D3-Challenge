@@ -194,7 +194,7 @@ function makeResponsive() {
       .attr("opacity", ".70");
 
     // append text info to circles
-    var textGroup = chartGroup.selectAll("text")
+    var textGroup = chartGroup.selectAll(null)
       .data(behaveData)
       .enter()
       .append("text")
